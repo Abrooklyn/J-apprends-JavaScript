@@ -212,3 +212,6 @@ console.log(shift);
 var prenom = "Angie";
 var nom = "Brooklyn";
 
+var resultat = [prenom + " " + nom + " " + prenom[0] + " " + nom[0]];
+
+console.log(resultat);
