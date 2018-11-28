@@ -207,7 +207,9 @@ console.log(shift);
 
 */
 
-//LES INITIALES
+//Exo 1 afficher des initiales
+
+/*
 
 var prenom = "Angie";
 var nom = "Brooklyn";
@@ -221,3 +223,75 @@ resultat.push(initiales);
 
 
 console.log(resultat);
+
+*/
+
+//FUNCTIONS
+
+/*
+
+ function maFonction(num) {
+     console.log(2 + num);
+ }
+ maFonction(8);
+
+    // FUNCTIONS : soustraction
+
+    function soustraction(a, b) {
+        console.log(a - b);
+    }
+    soustraction(8, 2);
+
+*/
+
+//SCOPE
+
+/*
+
+var num = 5;
+function soustraction(){
+    var num = 7;
+    console.log(num);
+}
+soustraction();
+console.log(num);
+
+*/
+// c'est accessible de parent à enfant mais quelques choses creer dans un enfant ne sera pas accessible par le parents
+
+// attention à la localisation de nos variables
+
+//RETOURNER UNE VALEUR
+
+/*
+function soustraction(a, b){
+    return a - b;
+}
+var resultat = soustraction(1, 5);
+console.log(resultat);
+
+
+function soustraction(a, b){
+    return "Coucou";
+}
+var resultat = soustraction(1, 5);
+console.log(resultat);
+*/
+
+// Exo 2 calculer une moyenne
+
+/*
+
+var note1 = 18;
+var note2 = 20;
+var moyenne = calculeMoyenne(note1, note2);
+
+function calculeMoyenne(a, b){
+    return (a + b) / 2;
+}
+
+console.log(moyenne);
+
+*/
+
+//
