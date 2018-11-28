@@ -211,7 +211,13 @@ console.log(shift);
 
 var prenom = "Angie";
 var nom = "Brooklyn";
+var initiales = prenom[0] + nom[0];
 
-var resultat = [prenom + " " + nom + " " + prenom[0] + " " + nom[0]];
+var resultat = [];
+
+resultat.push(prenom);
+resultat.push(nom);
+resultat.push(initiales);
+
 
 console.log(resultat);
