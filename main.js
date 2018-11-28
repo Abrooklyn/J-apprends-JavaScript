@@ -294,4 +294,9 @@ console.log(moyenne);
 
 */
 
-//
+//BOOLEANS
+
+/* TRUE / FALSE */
+
+
+
