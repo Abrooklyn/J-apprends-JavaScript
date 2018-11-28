@@ -101,10 +101,69 @@ console.log(resultat);
 bonjour += " " + nom;
 console.log(bonjour);
 
-*/
-
 var nom = "Angie";
 var age = 24;
 
 var resultat = "Bonjour " + nom + " tu as "+ age + " ans !";
 console.log(resultat);
+
+*/
+
+//LONGUEUR TEXT
+
+/*
+
+var nom = "Angie";
+
+console.log(nom.length);
+//variante
+console.log("Angie" .length);
+
+var nom = "Angie";
+
+console.log(nom[3]);
+
+console.log(nom[nom.length - 1]);
+
+console.log(nom.length - 2);
+
+*/
+
+//CORRIGER
+
+/*
+
+var nom = "Engie";
+
+nom = "Angie";
+
+console.log(nom);
+
+*/
+
+//ARRAY - TABLEAU
+
+
+var nom = "Angie";
+var age = 24;
+
+var stats = ["attaque", "défense"];
+
+var array = [nom, age, stats];
+
+array[0] = "Toto"; //changement de mon array
+array[1] = 50; //changement d'age
+array[2][1] = "Puissance";
+
+console.log(array);
+
+//ACCEDER AUX DONNEES DE L'ARRAY
+
+/*
+
+console.log(array[2]);
+
+console.log(array[2][1]);
+
+*/
+
