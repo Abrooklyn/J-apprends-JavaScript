@@ -143,6 +143,7 @@ console.log(nom);
 
 //ARRAY - TABLEAU
 
+/*
 
 var nom = "Angie";
 var age = 24;
@@ -157,6 +158,8 @@ array[2][1] = "Puissance";
 
 console.log(array);
 
+*/
+
 //ACCEDER AUX DONNEES DE L'ARRAY
 
 /*
@@ -165,5 +168,47 @@ console.log(array[2]);
 
 console.log(array[2][1]);
 
+
+console.log(array[2][1].length); //nombre de lettre "puissance"
+
 */
+
+//ajouter et supprimer une donnée dans array
+
+/*
+
+var arr = [1, 2, 3];
+
+arr.push("Salut"); //j'ajoute une donnée
+
+var pop = arr.pop(); //je stock ma donnée la derniere donnée que j'ai également effacée
+
+//arr.push(pop); //je push ce que j'avais extrait avant
+
+console.log(arr);
+console.log(pop);
+
+*/
+
+/*
+
+var arr = [1, 2, 3];
+arr.unshift(0); //j'ajoute un element en premier
+console.log(arr);
+
+var arr = [1, 2, 3];
+arr.shift(); //j'ai supprimer le premier element
+console.log(arr);
+
+var arr = [1, 2, 3];
+var shift = arr.shift(); //equivalent de pop et push
+console.log(arr);
+console.log(shift);
+
+*/
+
+//LES INITIALES
+
+var prenom = "Angie";
+var nom = "Brooklyn";
 
