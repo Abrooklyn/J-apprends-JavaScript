@@ -344,15 +344,97 @@ console.log(niveau([12, 8, 16]));
 
 //OBJETS
 
+/*
 var chevalier = {
     "force": 15,
     "vitesse": 5,
-    "faiblesse": ["mage","ninja"]
+    "faiblesse": ["mage","ninja"],
+    "compagnon": {
+        "animal": "chien",
+        "aide": "écuyer"
+    }
 };
-
 chevalier.force = 20;
 chevalier.arme = "épée";
-
+delete chevalier.arme; //il a perdu/cassé son arme.
 var requete = "force";
+console.log(chevalier.hasOwnProperty("arme")); //savoir si il a une arme
+console.log(chevalier.compagnon.aide);
+/*
 
-console.log(chevalier);
+//EXEMPLE RECETTES
+
+/*
+var recettes = {
+    "recette1": {
+        "ingredients": [],
+        "nom": "ma recette de tout les jours",
+        "cuisson": 15
+    },
+    "recette2": {
+        "ingredients": [],
+        "nom": "ma recette favoris",
+        "cuisson": 30
+    }
+}
+*/
+
+//BOUCLE WHILE
+
+/*
+var i = 0;
+var triangle = [];
+
+while(i < 10) {
+    i++;
+    triangle.push("#");
+    console.log(triangle);
+    
+}
+*/
+
+//BOUCLE FOR
+
+/*
+var triangle = [];
+for(var i = 10; i >= 0; i -= 4) {
+    triangle.push("#")
+    console.log(triangle);
+}
+*/
+
+//BOUCLE FOR (SUITE)
+
+/*
+var arr = [10, 5, 15, 7, 4];
+var total = 0;
+for (var i = 0; i < arr.length; i++) {
+    total += arr[i];
+}
+console.log(total);
+*/
+
+//Exo 4
+
+/*
+function moyenne(arr) {
+    var arr = [15, 7, 8, 14];
+    var total = 0;
+    for (var i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    return total / arr.length;
+}
+console.log(moyenne([15, 7, 8, 14, 7]));
+*/
+
+// BOUCLE DANS UNE BOUCLE
+
+function plusUn(arr) {
+    for(var i = 0; i < arr.length, i++) {
+
+    }
+    return arr;
+}
+
+console.log(plusUn([[1,2],[3,4],[5,6]]));
