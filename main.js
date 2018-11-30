@@ -430,11 +430,69 @@ console.log(moyenne([15, 7, 8, 14, 7]));
 
 // BOUCLE DANS UNE BOUCLE
 
+/*
 function plusUn(arr) {
     for(var i = 0; i < arr.length, i++) {
-
+        for(var j = 0; j < arr[i].length; j++) {
+            arr[i][j] += 1;
+        }
     }
     return arr;
 }
-
 console.log(plusUn([[1,2],[3,4],[5,6]]));
+*/
+
+// GENERER UN NOMBRE ALEATOIRE
+
+/*
+var random = Math.random() * 5; //maxi 4.99999...
+console.log(random);
+*/
+
+/*
+var random = Math.floor(Math.random() * 6); // de 0 à 5
+console.log(random);
+
+var random = Math.floor(Math.random() * 6 + 1); // de 1 à 6
+console.log(random);
+*/
+
+// DANS UN RANG
+
+/*
+function rangRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min); //du minimum au maximum de 5 à 10
+}
+console.log(rangRandom(5, 10));
+*/
+
+//MELANGER UN ARRAY
+//c'est comme mélanger des cartes
+
+
+/*
+function randomize(arr) {
+    var temp = 0;
+    var random = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+        random = Math.floor(Math.random() * arr.length);
+        temp = arr[i];
+        arr[i] = arr[random];
+        arr[random] = temp;
+    }
+    return arr;
+}
+console.log(randomize([1,2,3,4,5]));
+*/
+
+//METHODE MAP
+
+/*
+var arr = [1, 2, 3, 4, 5];
+var  arrPlusUn = arr.map(function(nombre) {
+    return nombre + 1;
+});
+console.log(arrPlusUn);
+*/
+
