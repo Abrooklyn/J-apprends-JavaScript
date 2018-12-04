@@ -78,13 +78,27 @@ perso.nom = "peter";
 
  //TEMPLATES STRINGS
 
+ /*
  const perso = {
      nom: "John Snow",
      force: 15,
      arme: "épée"
  };
-
- const texte = perso.nom + " a une force de " + perso.force + " et une " + perso.arme + ".";
-
+ // const texte = perso.nom + " a une force de " + perso.force + " et une " + perso.arme + ".";
+ const texte = `${perso.nom} a une force de ${perso.force} et une ${perso.arme}.`;
  console.log(texte);
+*/
+
+// cas pratiques avec les templates strings
+
+const perso = {
+    nom: "Jon Snow", 
+    force: 15,
+    arme: "épée",
+};
+
+const texte = `${perso.nom ? perso.nom : "Angie"} est mon nom. `;//pour voir si mon nom existe ":" sinon 
+
+console.log(texte);
+
  
