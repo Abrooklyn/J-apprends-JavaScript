@@ -54,7 +54,7 @@ if (arme == "épée") {
 }
 console.log(arme);
 */
-
+/*
 const arme "épée";
 
 const perso = {
@@ -67,4 +67,24 @@ const perso = {
 
 perso.nom = "peter";
 
+*/
+ // const est propre et precis
+ // pour une variable qui sera eventuellement changée souvent on peux utilisé "let"
+
+ // 1. Const par defaut
+ // 2. let si besoin  de MAJ
+ // 3. plus jamais le var
+
+
+ //TEMPLATES STRINGS
+
+ const perso = {
+     nom: "John Snow",
+     force: 15,
+     arme: "épée"
+ };
+
+ const texte = perso.nom + " a une force de " + perso.force + " et une " + perso.arme + ".";
+
+ console.log(texte);
  
