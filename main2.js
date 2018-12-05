@@ -90,7 +90,7 @@ perso.nom = "peter";
 */
 
 // cas pratiques avec les templates strings
-
+/*
 const perso = {
     nom: "Jon Snow", 
     force: 15,
@@ -100,5 +100,62 @@ const perso = {
 const texte = `${perso.nom ? perso.nom : "Angie"} est mon nom. `;//pour voir si mon nom existe ":" sinon 
 
 console.log(texte);
+*/
+// je peux aller à la ligne avec les ``
 
- 
+//LES FONCTIONS FLECHEES
+
+
+// const arr = [1, 2, 3, 4, 5];
+
+/*
+const arrPlusUn = arr.map(function(nombre) {
+    return `${nombre} + 1 = ${nombre + 1}`;
+});
+*/
+/*
+const arrPlusUn = arr.map((nombre) => {
+    return `${nombre} + 1 = ${nombre + 1}`;
+});
+*/
+/*
+const arrPlusUn = arr.map(nombre => {
+    return `${nombre} + 1 = ${nombre + 1}`;
+});
+*/
+/*
+const arrPlusUn = arr.map(nombre => `${nombre} + 1 = ${nombre + 1}`);
+*/
+/*
+const arrPlusUn = arr.map(() => `5`);
+*/
+
+//console.log(arrPlusUn);
+
+/*
+const arrPlusUn = arr.map(() => `5`);
+const maFonction = () => console.log("Coucou");
+
+maFonction();
+
+console.log(arrPlusUn);
+*/
+
+//Paramètres par defaut dans une fonction
+
+/*
+function disMonNom(nom = "No Name") {
+    console.log(nom);   
+}
+disMonNom("Angie");
+*/
+
+//DESTRUCTURING AVEC UN OBJET
+
+const joueur = {
+    nom: "John",
+    type: "Chevalier",
+    arme: "Epée"
+}
+
+console.log(joueur);
