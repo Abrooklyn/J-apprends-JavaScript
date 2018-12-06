@@ -196,7 +196,7 @@ function randomize(arr) {
 
 console.log(randomize([1, 2, 3, 4, 5]));
 */
-
+/*
 function randomize(arr) {
     for (var i = 0; i < arr.length; i++) {
         const random = Math.floor(Math.random() * arr.length);
@@ -206,3 +206,28 @@ function randomize(arr) {
 }
 
 console.log(randomize([1, 2, 3, 4, 5]));
+*/
+
+//SPREAD OPERATOR
+
+/*
+const listeAmis = ["Gab", "Didou", "Steph"];
+const listeFamille = ["Aurore", "Claudia", "Nicolas"]
+
+const liste = [...listeAmis, "banjo", ...listeFamille];
+const copieListe = [...liste];
+copieListe.push("kawa");
+
+console.log(copieListe);
+*/
+
+//CAS PRATIQUE SPREAD OPERATOR
+
+/*
+const liste = ["Gab", "Didou", "Poppi", "Heaven", "Groot"];
+
+const [ami1, ami2, ...animaux] = liste ;
+
+console.log(animaux);
+*/
+
