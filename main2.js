@@ -151,11 +151,58 @@ disMonNom("Angie");
 */
 
 //DESTRUCTURING AVEC UN OBJET
-
+/*
 const joueur = {
     nom: "John",
     type: "Chevalier",
     arme: "Epée"
 }
+const { nom, type: genre, arme = "Lance" } = joueur;
+console.log(nom, type, arme);
+*/
 
-console.log(joueur);
+//DESTRUCTURING D'ARRAY
+/*
+const stats = [154, 12, 78, 28, 54, 54];
+const [ attaque, defense, vitesse, magie ] = stats;
+console.log(attaque, defense, vitesse, magie);
+*/
+
+//INTERVERTIR DES VALEURS
+/*
+let maCarte = "Dracaufeu" ;
+let taCarte = "Rattata";
+//let temp = maCarte;
+//maCarte = taCarte;
+//taCarte = temp;
+[maCarte, taCarte] = [taCarte, maCarte];
+console.log(maCarte, taCarte);
+*/
+
+//MELANGER UN ARRAY ES6
+/*
+function randomize(arr) {
+    let temp = 0;
+    let random = 0;
+
+    for(var i = 0; i < arr.length; i++) {
+        random = Math.floor(Math.random() + arr.length);
+        temp = arr[i];
+        arr[i] = arr[random];
+        arr[random] = temp;
+    }
+    return arr;
+}
+
+console.log(randomize([1, 2, 3, 4, 5]));
+*/
+
+function randomize(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        const random = Math.floor(Math.random() * arr.length);
+        [arr[i], arr[random]] = [arr[random], arr[i]];
+    }
+    return arr;
+}
+
+console.log(randomize([1, 2, 3, 4, 5]));
