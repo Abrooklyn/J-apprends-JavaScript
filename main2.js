@@ -231,3 +231,26 @@ const [ami1, ami2, ...animaux] = liste ;
 console.log(animaux);
 */
 
+// On revoit tout / PRACTICE
+/*
+Function plusUn(...args) {
+    const arr = [...args];
+    return arr.map(num => num + 1);
+}
+
+console.log(plusUn(1, 2, 3, 4, 5, 6));
+*/
+
+//ES7 (nouveauté)
+
+// les puissances
+/*
+console.log(2 ** 3);
+*/
+
+//chercher un string dans un tableau
+/*
+const arr = ["a","b","c","d","e"];
+console.log(arr.includes("a")); //true
+*/
+
