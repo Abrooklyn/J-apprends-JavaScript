@@ -65,4 +65,31 @@ ajouterTexte("Steve", "bloup");
 */
 
 //modifier des attributs
+/*
+const titre = document.getElementById("titre");
+const texte = document.body.getElementsByTagName("p");
+const lien = document.body.getElementsByTagName("a")[0];
 
+lien.setAttribute("href", "https://github.com/Abrooklyn");
+console.log(lien.getAttribute("href"));
+*/
+
+//changer une liste d'element en array
+/*
+const titre = document.getElementById("titre");
+const texte = document.body.getElementsByTagName("p");
+const lien = document.body.getElementsByTagName("a")[0];
+
+const texteArray = Array.from(texte);
+texteArray.map(paragraphe => paragraphe.innerHTML = "Hahahaha je t'ai hacké !")
+
+console.log(texteArray);
+*/
+
+//TAILLE D'UN ELEMENT
+
+const titre = document.getElementById("titre");
+const texte = document.body.getElementsByTagName("p");
+const lien = document.body.getElementsByTagName("a")[0];
+
+console.log(titre.offsetHeight, titre.offsetWidth);
