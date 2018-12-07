@@ -87,9 +87,62 @@ console.log(texteArray);
 */
 
 //TAILLE D'UN ELEMENT
-
+/*
 const titre = document.getElementById("titre");
 const texte = document.body.getElementsByTagName("p");
 const lien = document.body.getElementsByTagName("a")[0];
 
-console.log(titre.offsetHeight, titre.offsetWidth);
+console.log(titre.offsetHeight, titre.offsetWidth);//exterieur
+
+console.log(titre.clientHeight, titre.clientWidth);//interieur
+*/
+
+//MODIFIER LE STYLE
+/*
+const titre = document.getElementById("titre");
+const texte = document.body.getElementsByTagName("p");
+const lien = document.body.getElementsByTagName("a")[0];
+
+titre.style.color = "#C55";
+titre.style.fontFamily = "Arial";
+titre.style.boxShadow = "2px 2px 10px rgba(0, 0, 0, 0.3)";
+*/
+//autre façon de trouver un element
+/*
+const texte = document.body.getElementsByTagName("p");
+const lien = document.body.getElementsByTagName("a")[0];
+
+//const titre = document.querySelector("h1");
+const titre = document.querySelector("#titre");
+console.log(titre);
+*/
+
+//AJOUTER OU SUPPRIMER DES CLASSES CSS
+/*
+const titre = document.querySelector("h1");
+const titre = document.querySelectorAll("a");
+
+liens[0].addEventListener("click", function() {
+    titre.classList.add("fbi");
+});
+liens[1].addEventListener("click", function() {
+    titre.classList.remove("fbi");
+});
+liens[2].addEventListener("click", function() {
+    titre.classList.toggle("fbi");
+});
+*/
+
+//PRATIQUE
+/*
+const titres = document.querySelectorAll("h1");
+
+function goToTitre(titre) {
+    const distance = titre.offsetTop;
+    console.log(titre.offsetTop);
+
+    window.scrollTo(0, distance);
+}
+
+goToTitre(titres[1]);
+*/
