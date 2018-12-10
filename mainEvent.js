@@ -27,7 +27,7 @@ addEventListener("keypress", function(event) {
 */
 
 //PRATIQUE Affichez une image au clic
-
+/*
 addEventListener("click", function(event) {
     const image = document.createElement("img");
     const size = 100;
@@ -39,4 +39,6 @@ addEventListener("click", function(event) {
 
     document.body.appendChild(image);
 });
+*/
 
+//
