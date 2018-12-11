@@ -40,5 +40,3 @@ addEventListener("click", function(event) {
     document.body.appendChild(image);
 });
 */
-
-//
