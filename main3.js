@@ -22,7 +22,7 @@ const texte = setTimeout(function() {
 */
 
 // Déclencher un script toutes les X secondes (setInterval)
-
+/*
 const titre = document.querySelector("h1");
 let i = 3;
 
@@ -40,4 +40,18 @@ titre.addEventListener("click", function() {
         i--;
 }, 1000);     
 })
+*/
 
+// Supprimer toutes les voyelles du clavier (clvrJS)
+
+const texte = document.querySelector("textarea");
+const txt = [];
+const voyelles = ["a","e","i","o","u","y"];
+
+texte.addEventListener("keypress", function(event) {
+        const key = event.key;
+        if (!voyelles.includes(key)) {
+                txt.push(key);  
+        }
+        console.log(txt.join(""));
+});
