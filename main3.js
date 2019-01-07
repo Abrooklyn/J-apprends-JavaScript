@@ -43,7 +43,7 @@ titre.addEventListener("click", function() {
 */
 
 // Supprimer toutes les voyelles du clavier (clvrJS)
-
+/*
 const texte = document.querySelector("textarea");
 const txt = [];
 const voyelles = ["a","e","i","o","u","y"];
@@ -54,4 +54,14 @@ texte.addEventListener("keypress", function(event) {
                 txt.push(key);  
         }
         console.log(txt.join(""));
+});
+*/
+
+//Desactiver un Bouton (disabledButton)
+
+const texte = document.querySelector("textarea");
+const button = document.querySelector("button");
+
+texte.addEventListener("keyup", function() {
+        button.disabled = texte.value.length > 20 ? true : false;   
 });
