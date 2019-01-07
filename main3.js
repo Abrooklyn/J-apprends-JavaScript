@@ -58,10 +58,21 @@ texte.addEventListener("keypress", function(event) {
 */
 
 //Desactiver un Bouton (disabledButton)
-
+/*
 const texte = document.querySelector("textarea");
 const button = document.querySelector("button");
 
 texte.addEventListener("keyup", function() {
         button.disabled = texte.value.length > 20 ? true : false;   
 });
+*/
+
+//preventDefault
+const formulaire = document.querySelector("form");
+
+formulaire.addEventListener("submit", function(event){
+        event.preventDefault();
+        console.log("OK");
+        formulaire.reset();
+});
+
